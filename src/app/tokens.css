@@ -1,0 +1,110 @@
+:root {
+  --ui-page-bg: #f5f5f5;
+  --ui-page-fg: #18181b;
+
+  --ui-surface-bg: #ffffff;
+  --ui-surface-fg: #18181b;
+  --ui-text-muted: #52525b;
+  --ui-text-subtle: #71717a;
+  --ui-border: #d4d4d8;
+
+  --ui-button-primary-bg: #18181b;
+  --ui-button-primary-bg-hover: #27272a;
+  --ui-button-primary-fg: #fafafa;
+
+  --ui-button-outline-bg: transparent;
+  --ui-button-outline-bg-hover: #f4f4f5;
+  --ui-button-outline-border: #d4d4d8;
+  --ui-button-outline-fg: #3f3f46;
+
+  --ui-input-bg: #ffffff;
+  --ui-input-fg: #18181b;
+  --ui-input-placeholder: #71717a;
+  --ui-input-border: #d4d4d8;
+  --ui-input-border-focus: #18181b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ui-page-bg: #09090b;
+    --ui-page-fg: #f4f4f5;
+
+    --ui-surface-bg: #ffffff;
+    --ui-surface-fg: #18181b;
+    --ui-text-muted: #52525b;
+    --ui-text-subtle: #71717a;
+    --ui-border: #d4d4d8;
+
+    --ui-button-primary-bg: #27272a;
+    --ui-button-primary-bg-hover: #3f3f46;
+    --ui-button-primary-fg: #fafafa;
+
+    --ui-button-outline-bg: #ffffff;
+    --ui-button-outline-bg-hover: #f4f4f5;
+    --ui-button-outline-border: #d4d4d8;
+    --ui-button-outline-fg: #3f3f46;
+
+    --ui-input-bg: #ffffff;
+    --ui-input-fg: #18181b;
+    --ui-input-placeholder: #71717a;
+    --ui-input-border: #d4d4d8;
+    --ui-input-border-focus: #18181b;
+  }
+}
+
+.theme-page {
+  background-color: var(--ui-page-bg);
+  color: var(--ui-page-fg);
+}
+
+.card-surface {
+  background-color: var(--ui-surface-bg);
+  border-color: var(--ui-border);
+  color: var(--ui-surface-fg);
+}
+
+.text-on-surface {
+  color: var(--ui-surface-fg);
+}
+
+.text-muted {
+  color: var(--ui-text-muted);
+}
+
+.text-subtle {
+  color: var(--ui-text-subtle);
+}
+
+.btn-primary {
+  background-color: var(--ui-button-primary-bg);
+  color: var(--ui-button-primary-fg);
+}
+
+.btn-primary:hover {
+  background-color: var(--ui-button-primary-bg-hover);
+}
+
+.btn-outline {
+  background-color: var(--ui-button-outline-bg);
+  border-color: var(--ui-button-outline-border);
+  color: var(--ui-button-outline-fg);
+}
+
+.btn-outline:hover {
+  background-color: var(--ui-button-outline-bg-hover);
+}
+
+.field-control {
+  width: 100%;
+  border: 1px solid var(--ui-input-border);
+  background-color: var(--ui-input-bg);
+  color: var(--ui-input-fg);
+}
+
+.field-control::placeholder {
+  color: var(--ui-input-placeholder);
+}
+
+.field-control:focus {
+  border-color: var(--ui-input-border-focus);
+}
