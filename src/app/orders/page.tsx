@@ -12,7 +12,7 @@ const EMPTY_ORDERS: Order[] = [];
 const fieldClassName =
     'field-control w-full rounded-xl px-3 py-2 text-sm outline-none';
 
-export default function OrdersPage() {
+export default function OrdersListPage() {
     const orders = useSyncExternalStore<Order[]>(subscribeOrders, loadOrders, () => EMPTY_ORDERS);
     const [q, setQ] = useState('');
     const [cargo, setCargo] = useState<CargoFilter>('all');

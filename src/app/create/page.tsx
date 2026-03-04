@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation';
 import { Stepper } from '@/components/Stepper';
 import type { CargoType, Order } from '@/lib/types';
 import { addOrder } from '@/lib/storage';
-import { getStep1Errors, Step1Section } from './steps/step1';
-import { getStep2Errors, Step2Section } from './steps/step2';
-import { buildSummary, getStep3Errors, Step3Section } from './steps/step3';
+import { getStep1Errors, Step1Section } from './steps/Step1';
+import { getStep2Errors, Step2Section } from './steps/Step2';
+import { buildSummary, getStep3Errors, Step3Section } from './steps/Step3';
 import type { DraftState, Errors, Step } from './steps/types';
 
 const cities = ['Москва', 'Санкт-Петербург', 'Казань', 'Новосибирск', 'Екатеринбург'] as const;
